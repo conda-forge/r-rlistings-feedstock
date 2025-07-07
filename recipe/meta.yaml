@@ -1,4 +1,4 @@
-{% set version = '0.2.11' %}
+{% set version = "0.2.12" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rlistings_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rlistings/rlistings_{{ version }}.tar.gz
-  sha256: bb52b7386824c894877d4a857456fbb55e8f607a9381f273d4cb7e775d05d513
+  sha256: 99eb60c3b39f2667895ed54e58547c9ffb0d48ea509bab288488645da038b58a
 
 build:
   number: 0
@@ -45,9 +45,7 @@ test:
 about:
   home: https://insightsengineering.github.io/rlistings/, https://github.com/insightsengineering/rlistings/
   license: Apache-2.0
-  summary: Listings are often part of the submission of clinical trial data in regulatory settings.  We
-    provide a framework for the specific formatting features often used when displaying
-    large datasets in that context.
+  summary: Listings are often part of the submission of clinical trial data in regulatory settings.  We provide a framework for the specific formatting features often used when displaying large datasets in that context.
   license_family: APACHE
   license_file:
     - LICENSE-2.0.txt
