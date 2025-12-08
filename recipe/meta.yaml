@@ -1,4 +1,4 @@
-{% set version = "0.2.12" %}
+{% set version = "0.2.13" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rlistings_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rlistings/rlistings_{{ version }}.tar.gz
-  sha256: 99eb60c3b39f2667895ed54e58547c9ffb0d48ea509bab288488645da038b58a
+  sha256: b9e7d8af65a47a3ac6bf22b4ef0055c376c22397226060cc4ae6a1e10b9fb5de
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -29,13 +29,13 @@ requirements:
   host:
     - r-base
     - r-checkmate >=2.1.0
-    - r-formatters >=0.5.11
-    - r-tibble >=2.0.0
+    - r-formatters >=0.5.12
+    - r-tibble >=3.2.1
   run:
     - r-base
     - r-checkmate >=2.1.0
-    - r-formatters >=0.5.11
-    - r-tibble >=2.0.0
+    - r-formatters >=0.5.12
+    - r-tibble >=3.2.1
 
 test:
   commands:
