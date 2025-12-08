@@ -29,13 +29,13 @@ requirements:
   host:
     - r-base
     - r-checkmate >=2.1.0
-    - r-formatters >=0.5.11
-    - r-tibble >=2.0.0
+    - r-formatters >=0.5.12
+    - r-tibble >=3.2.1
   run:
     - r-base
     - r-checkmate >=2.1.0
-    - r-formatters >=0.5.11
-    - r-tibble >=2.0.0
+    - r-formatters >=0.5.12
+    - r-tibble >=3.2.1
 
 test:
   commands:
